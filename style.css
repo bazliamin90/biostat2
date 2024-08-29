@@ -252,3 +252,13 @@ p::first-letter{
   font-weight: 400;
   font-style: italic;
 }
+
+ol ::marker {
+  font-size: 120%;
+  color: #00b7a8;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+li {
+	padding-top: 1.5rem;
+}
