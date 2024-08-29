@@ -1,0 +1,254 @@
+/* Global colour variables */
+:root {
+    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    ul li {
+        opacity: .8;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+	overflow-y:scroll;
+}
+
+body {
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin: 0 0 4rem 0;
+    padding: 0 0px;
+    _background: var(--bg);
+    background-image: url("bg02.svg");
+	_background-attachment: fixed;
+	_background-repeat: repeat;
+	background-size: 100%;
+	color: var(--text);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    margin: 0px auto;
+    max-width: 50rem;
+    width: 85%;
+	background: white;
+}
+
+header{
+	margin: 2rem auto auto auto;
+	border-top: 0.125rem solid black;
+	border-right: 0.125rem solid black;
+	border-left: 0.125rem solid black;
+	box-shadow: 0.313rem 0.313rem black;
+	padding: 1rem;
+}
+
+main{
+	border-right: 0.125rem solid black;
+	border-left: 0.125rem solid black;
+	border-bottom: 0.125rem solid black;
+	box-shadow: 0.313rem 0.313rem black;
+	padding: 1rem;
+}
+
+#td1{
+	border:none; 
+	vertical-align: text-top;
+}
+
+#ol1{
+	font-family: monospace;
+    font-size: 1rem;
+	margin: 1rem 7rem;
+}
+
+a{
+	text-decoration: underline overline red dotted;
+	text-underline-offset: 5px;
+}
+
+a.a-red{
+	text-decoration: underline overline red dotted;
+	text-underline-offset: 5px;
+}
+
+a.a-blue{
+	text-decoration: underline overline blue dotted;
+	text-underline-offset: 5px;
+}
+
+a.isi{
+	text-decoration: underline black dotted;
+	text-underline-offset: 5px;
+}
+
+#arab{
+	text-decoration: underline overline grey solid;
+	text-underline-offset: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 1.2rem;
+}
+        
+.button-container button {
+    width: 5.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    padding: 0.6rem 0 0.6rem 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.6rem 0 0.6rem 0;
+    text-align: center;
+}
+
+header{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+}
+
+@media(max-width:500px) {
+    body {
+        margin: 0 0 4rem 0;
+        padding: 0 0px;
+		min-width: 360px;
+    }
+
+	#ol1{
+	margin: 1rem 1rem;
+	}
+}
+
+/* Format the accordion */
+details {
+	padding: 0.2rem 0.5rem;
+    background: var(--accent);
+    _border-color: purple;
+    _border-radius: 5px;
+    margin: 0.2rem 0.7rem;
+}
+
+summary {
+    cursor: pointer;
+	font-size: 0.9rem;
+	position: sticky;
+	top: 50px;
+}
+
+td{
+  border: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 4px 6px;
+  font-size: 0.8rem;
+}
+
+:root { scroll-behavior: smooth; }
+
+.stt {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 9;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid black;
+  box-shadow: 0.1rem 0.1rem black;
+}
+
+.nexar {
+  position: fixed;
+  bottom: 50%;
+  right: 10px;
+  z-index: 9;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid black;
+  box-shadow: 0.1rem 0.1rem black;
+}
+
+.prevar {
+  position: fixed;
+  bottom: 50%;
+  left: 10px;
+  z-index: 9;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid black;
+  box-shadow: 0.1rem 0.1rem black;
+}
+
+#image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .centered {
+            display: inline;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+        .centered label,
+        .centered select,
+        .navigation-buttons button {
+        font-family: monospace;
+        }
+        .navigation-buttons {
+            margin-top: 1rem;
+        }
+        .navigation-buttons button:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+		
+p::first-letter{
+   font-size : 20px;
+   font-family: "IM Fell DW Pica", serif;
+}
+
+.im-fell-dw-pica-regular {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-dw-pica-regular-italic {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: italic;
+}
