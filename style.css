@@ -54,7 +54,7 @@ main{
 	border-left: 0.125rem solid black;
 	border-bottom: 0.125rem solid black;
 	box-shadow: 0.313rem 0.313rem black;
-	padding: 1rem;
+	padding: 1rem 0 0 0;
 }
 
 #td1{
@@ -146,6 +146,7 @@ h6 {
         margin: 0 0 4rem 0;
         padding: 0 0px;
 		min-width: 360px;
+		font-size: 0.8rem;
     }
 
 	#ol1{
@@ -261,4 +262,12 @@ p::first-letter{
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+li{
+	padding: 1rem 0 1rem 0;
+}
+
+hr {
+  width: 85%; /* or any other width you want */
 }
