@@ -108,6 +108,11 @@ a.isi{
 	text-underline-offset: 5px;
 }
 
+a.isi2{
+	text-decoration: underline lightgrey dotted;
+	text-underline-offset: 5px;
+}
+
 #arab{
 	text-decoration: underline overline grey solid;
 	text-underline-offset: 5px;
@@ -281,10 +286,17 @@ hr{
 .imghr{
 	width: 85%;
 	height: auto;
+	pointer-events: none;
 }
 
 .imghrflip{
 	width: 85%;
 	height: auto;
 	transform: scaleX(-1);
+	pointer-events: none;
+}
+
+sup {
+	vertical-align: sup;
+    font-size: 0.6rem;
 }
