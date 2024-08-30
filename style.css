@@ -83,6 +83,16 @@ a.a-blue{
 	text-underline-offset: 5px;
 }
 
+a.a-black{
+	_text-decoration: underline overline blue dotted;
+	_text-underline-offset: 5px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	padding: 0 5px 0 5px;
+	pointer-events: none;
+}
+
 a.isi{
 	text-decoration: underline black dotted;
 	text-underline-offset: 5px;
@@ -251,14 +261,4 @@ p::first-letter{
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-ol ::marker {
-  font-size: 120%;
-  color: #00b7a8;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-li {
-	padding-top: 1.5rem;
 }
