@@ -148,10 +148,6 @@ h6 {
 		min-width: 360px;
 		font-size: 0.8rem;
     }
-
-	#ol1{
-	margin: 1rem 1rem;
-	}
 }
 
 /* Format the accordion */
@@ -268,6 +264,11 @@ li{
 	padding: 1rem 0 1rem 0;
 }
 
-hr {
-  width: 85%; /* or any other width you want */
+hr{
+	width: 85%;
+}
+
+.imghr{
+	width: 65%;
+	height: auto;
 }
