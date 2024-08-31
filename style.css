@@ -123,6 +123,8 @@ a.isi{
 a.isi2{
 	text-decoration: underline lightgrey dotted;
 	text-underline-offset: 5px;
+	font-size: 0.6rem;
+	font-style: italic;
 }
 
 #arab{
@@ -330,11 +332,14 @@ th{
 }
 
 td{
-	_border: 1px solid teal;
 	font-size: 0.6rem;
 	vertical-align: top;
 	border-top: 1px solid black;
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
+}
+
+td.dash {
+	border-left: 1px dashed grey;
 }
