@@ -73,28 +73,62 @@
 	
 	<ol>
 		<li>
-		Estimate <a class="a-black">association</a> between <a class="a-black">independent</a> 
-		and <a class="a-black">dependent</a> variable.
+		Estimate <a class="blk">association</a> between <a class="blk">independent</a> 
+		and <a class="blk">dependent</a> variable.
 		</li>
 		<li>
-		Independent variable <a class="a-black">(iv)</a> 
-		and dependent variable <a class="a-black">(dv)</a> can 
-		be <a class="a-yel">continuous</a> or <a class="a-yel">categorical</a>.<sup>[1]</sup>
+		Independent variable <a class="blk">(iv)</a> 
+		and dependent variable <a class="blk">(dv)</a> can 
+		be <a class="yel">continuous</a> or <a class="yel">categorical</a> (binary).<sup>[1]</sup>
 		</li>
 		<li>
-		iv + continuous dv = <a class="a-black">linear</a> regression.
+		However, majority of references such as <sup>[2]</sup>, state that the 
+		<a class="blk">iv</a> must 
+		be a <a class="yel">continuous</a> variable.
 		</li>
 		<li>
-		iv + categorical dv = <a class="a-black">logistic</a> regression.
+		iv + continuous dv = <a class="blk">linear</a> regression.
+		</li>
+		<li>
+		iv + categorical dv = <a class="blk">logistic</a> regression.
 		</li>
 		<li>
 		Example:
-		<br><a class="a-black">iv</a>: Cancer, copd , ild
-		<br><a class="a-black">dv</a>: Days of stay at ICU (<a class="a-yel">cont.</a>), 
-		palliative care present or absent (<a class="a-yel">cat.</a>).
+		<br><a class="blk">iv</a>: Cancer, copd , ild
+		<br><a class="blk">dv</a>: Days of stay at ICU (<a class="yel">cont.</a>), 
+		palliative care present or absent (<a class="yel">cat.</a>).
 		</li>
 		<li>
 		In the above example, both linear and logistic regression will be used.
+		</li>
+		<li>
+		Regression tests, simplified: <sup>[2]</sup>
+		<table>
+			<tr>
+				<th>Regression</th>
+				<th>iv</th>
+				<th>dv</th>
+				<th>Eg.</th>
+			</tr>
+			<tr>
+				<td>Simple linear</td>
+				<td>✤&nbsp<a class="blu">Cont.</a><br>✤&nbsp1</td>
+				<td>◈&nbsp<a class="blu">Cont.</a><br>◈&nbsp1</td>
+				<td>✤&nbspincome<br>◈&nbsplife expectancy</td>
+			</tr>
+			<tr>
+				<td>Multiple linear</td>
+				<td>✤&nbsp<a class="blu">Cont.</a><br>✤&nbsp2/></td>
+				<td>◈&nbsp<a class="blu">Cont.</a><br>◈&nbsp1</td>
+				<td>✤&nbspincome & minutes of exercise per day<br>◈&nbsplife expectancy</td>
+			</tr>
+			<tr>
+				<td>Logistic</td>
+				<td>✤&nbsp<a class="blu">Cont.</a></td>
+				<td>◈&nbsp<a class="pink">Cat.</a> (Binary)</td>
+				<td>✤&nbspdrug dosage<br>◈&nbspcured or not</td>
+			</tr>
+		</table>
 		</li>
     </ol>
 	
@@ -125,6 +159,7 @@
 	
 
 
+	<!--✤ ◈-->
 	<!--<ol><li></li></ol>-->
 	<!--<p></p>-->
 	<!--<center><p></p></center>-->
