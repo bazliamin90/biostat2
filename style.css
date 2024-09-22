@@ -18,8 +18,7 @@ html {
 }
 
 body {
-    font-family: monospace;
-    font-size: 0.9rem;
+	font-size: 1.1rem;
     margin: 0 0 4rem 0;
     padding: 0 0px;
     _background: var(--bg);
@@ -118,8 +117,9 @@ a.pink{
 }
 
 a.isi{
-	text-decoration: underline black dotted;
+	text-decoration: underline lightgrey dotted;
 	text-underline-offset: 5px;
+	color: black;
 }
 
 a.isi2{
@@ -145,17 +145,14 @@ a.isi2{
 }
 
 header h1 {
-    margin: 0;
     font-size: 1.4rem;
-    padding: 0.6rem 0 0.6rem 0;
     text-align: center;
 }
 
 header h2 {
-    margin: 0;
     font-size: 1rem;
-    padding: 0.6rem 0 0.6rem 0;
     text-align: center;
+	color: lightgrey;
 }
 
 header{
@@ -169,7 +166,7 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 @media(max-width:500px) {
