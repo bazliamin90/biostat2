@@ -2,10 +2,6 @@
 :root {
     --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
     --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-
-    ul li {
-        opacity: .8;
-    }
 }
 
 * {
@@ -188,6 +184,10 @@ h6 {
 	ol{
 	padding: 0 0 1rem 1.5rem;
 	}
+	
+	table th, table td{
+		font-size: 0.7rem;
+	}
 }
 
 /* Format the accordion */
@@ -204,13 +204,6 @@ summary {
 	font-size: 0.9rem;
 	position: sticky;
 	top: 50px;
-}
-
-td{
-  border: 1px solid #bbbbbb;
-  text-align: left;
-  padding: 4px 6px;
-  font-size: 0.8rem;
 }
 
 :root { scroll-behavior: smooth; }
@@ -348,35 +341,24 @@ table {
 }
 
 th{
-	font-size: 0.6rem;
 	text-align: center;
 	background-color: #e8daff;
+	font-size: 1rem;
 }
 
 td{
-	font-size: 0.6rem;
 	vertical-align: top;
 	border-top: 1px solid black;
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
+	text-align: left;
+	padding: 4px 6px;
+	font-size: 1rem;
 }
 
 td.dash {
 	border-left: 1px dashed grey;
-}
-
-.autoRotate{
-    animation: autoRotateAnimation;
-    animation-timeline: view(25% 25%);
-}
-@keyframes autoRotateAnimation{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
 }
 
 .home {
