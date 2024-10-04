@@ -15,11 +15,11 @@ html {
 
 body {
 	font-size: 1.1rem;
-    margin: 0 0 4rem 0;
-    padding: 0 0px;
 	background-size: 100%;
 	color: var(--text);
     line-height: 1.6;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 header{
@@ -105,18 +105,10 @@ header{
 	padding-bottom: 0.5rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1;
-}
-
 @media(max-width:500px) {
     body {
-		width: 360px;
+		min-width: 350px;
+		max-width: 500px;
 		font-size: 0.8rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
