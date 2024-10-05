@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standardization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Standardization</h1>
+	<hr>
+	
+	<nav>
+      <ol>
+        <li><a href="#why">Why standardization?</a></li>
+		<li><a href="#type">Types</a></li>
+		<li><a href="#asr">Age-standardized rate</a></li>
+		<li><a href="#direct">Direct method</a></li>
+		<li><a href="#directe">Direct example</a></li>
+		<li><a href="#indirect">Indirect method</a></li>
+		<li><a href="#indirecte">Indirect example</a></li>
+      </ol>
+    </nav>
+	<hr>
+	
+	<ol>
+		<a id="why"></a>
+		<li><a class="c1">Comparing</a> mortality and morbidity rates in two or more populations is important for the evaluation of community health status.
+		
+		<li><a id="type"></a>Comparison is made by using two methods of standardization: 
+			<ol class="ol2">
+			<li><a class="c2">direct.</a>
+			<li><a class="c2">indirect.</a>
+			</ol>
+		<li><a id="asr"></a>Eg. Age-standardized rates.
+			<ul>
+			<li>If age-specific mortality rates (<a class="c1">asmr</a>) for two or more populations are known, 
+			use <a class="c1">direct</a> standardization.
+			<li>If asmr are unknown, use indirect standardization.
+			</ul>
+		<li><a id="direct"></a><a class="c2">Direct</a> standardization steps:
+			<ol class="ol2">
+			<li>Calculate asmr (each age group, each population).
+			<li>Choose one of the populations as reference (standard) population. 
+			(*If the mortality rates of a specific community are compared to the national 
+			population, then the national population is considered as reference).
+			<li>Multiply asmr of population under study to the 
+			number of persons in each age group of the standard population.
+			<li>We'll get the expected deaths for each age group, each population.
+			<li>Add the number of expected deaths from all age groups.
+			<li>To get age-adjusted mortality rates, divide total number of expected
+			deaths by the standard population.
+			<li>Compare asmr of the two populations.
+			</ol>
+		<li><a id="directe"></a>Direct standardization, example:
+			<img src="https://github.com/bazliamin90/img/blob/main/bios/0002a.png?raw=true">
+			<ul class="ol2">
+			<li>B have higher crude death rates (cdr) than A.
+			<li>Next, use national population as reference.
+			</ul>
+			<img src="https://github.com/bazliamin90/img/blob/main/bios/0002b.png?raw=true">
+			<ul class="ol2">
+			<li>Expected death:
+				<br>Population A : 1186.18
+				<br>Population B : 1158.99
+			<li>Age adjusted death rate:
+				<br>A = (1186.18/51,000) x 1000 = 23.3 per 1000 population.
+				<br>B = (1158.99/51,000) x 1000 = 22.7 per 1000 population.
+			<li>Based on age-adjusted rates, risk of death is higher in population A than B.
+			<li>Therefore, relying on crude death rates only is misleading.
+			</ul>
+		<li><a id="indirect"></a><a class="c1">Indirect</a> standardization steps:	
+			<ol class="ol2">
+			<li>Choose a reference population.
+			<li>Calculate observed deaths in the populations of interest.
+			<li>Apply asmr from reference population to the populations of interest. 
+			<li>Multiply people in each age group of the populations, by the asmr in 
+			the reference population.
+			<li>Sum the total expected deaths for each population. 
+			<li>Divide the total observed deaths, by 
+			expected deaths.
+			<li>The ratio of observed deaths to expected deaths is “Standardized mortality 
+			ratio” (smr).
+			<li>smr = od/ed
+			<li>Calculate adjusted mortality rates (amr):
+				<br>amr = smr x cdr
+			<li>If asmr of the reference population is applied, cdr must be calculated 
+			from that reference population.
+			</ol>
+		<li><a id="indirecte"></a>Indirect standardization, example:
+			<ul class="ol2">
+			<li>First, we must know the observed death:
+				<br> A = 120
+				<br> B = 30
+			<li>Tabulate data.
+			</ul>
+			<img src="https://github.com/bazliamin90/img/blob/main/bios/0002z.png?raw=true">
+			<ul class="ol2">
+			<li>Calculate standardized mortality ratio (smr):
+				<br>smr A = 120/195.5 = 0.61
+				<br>smr B = 30/69.5 = 0.43
+			<li>Still, risk of death is higher in population A than B, after adjusting for 
+			differences by age. 
+			<li>In indirect method, common practice is to compare smr.
+			</ul>
+	</ol>
+	<hr>
+	
+	<h3>Reference</h3>
+	<ol>
+		<li class="grey">
+			<a href="https://drive.google.com/file/d/1JV8EihXV1JGeRfiVeTSClJiZF415JHcV/
+			view?usp=sharing" target="_blank">
+			Easy Way To Learn Standardization: Direct And Indirect Methods
+			</a>
+	</ol>
+	
+	<a href='#' class="stt">↑</a>
+	<a href="index.html" class="home">menu</a>
+</body>
+
+</html>
