@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="header.js"></script>
+</head>
+
+<body>
+
+<header-component></header-component>
+
+    <h1 class="title">Linear & logistic regression</h1>
+
+	<nav>
+      <ol>
+        <li><a href="#1">Why regression?</a></li>
+		<li><a href="#2">Choosing type of regression</a></li>
+		<li><a href="#3">Example</a></li>
+		<li><a href="#4">Simplified</a></li>
+		<li><a href="#5">Multinomial logistic regression</a></li>
+		<li><a href="#6">Multivariate analysis</a></li>
+      </ol>
+    </nav>
+	
+	<br>
+	<center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
+	
+	<ol>
+	
+		<a id="1" class="target"></a>
+		<li>
+		To estimate <a class="c1">association</a> between <a class="c1">independent</a> 
+		and <a class="c1">dependent</a> variable.
+		</li>
+		
+		<li>
+		Independent variable <b>(iv)</b> 
+		and dependent variable <b>(dv)</b> can 
+		be <a class="c2">continuous</a> or <a class="c2">categorical</a> (binary).<sup>[1]</sup>
+		</li>
+		
+		<li>
+		Some references <sup>[2]</sup> stated that the 
+		<b>iv</b> must 
+		be a <a class="c1">continuous</a> variable.
+		</li>
+		
+		<a id="2" class="target"></a>
+		<li>How to choose: 
+			<ol class="ol2">
+			<li><b>iv</b> + <b>continuous</b> dv = <a class="c2">linear</a> regression.
+			<li><b>iv</b> + <b>categorical</b> dv = <a class="c2">logistic</a> regression.
+			</ol>
+		
+		<a id="3" class="target"></a>
+		<li>Example:
+			<ul class="ol2">
+			<li><b>iv</b>: Cancer, copd , ild
+			<li><b>dv</b>: Days of stay at ICU (<b>cont.</b>), 
+		palliative care present or absent (<b>cat.</b>).
+			</ul>
+		</li>
+		
+		<li>
+		In the above example, both linear and logistic regression will be used.
+		</li>
+		
+		<a id="4" class="target"></a>
+		<li>
+		Regression tests, simplified: <sup>[2]</sup>
+		<table>
+			<tr>
+				<th class="bottom">Regression</th>
+				<th class="left bottom">iv</th>
+				<th class="left bottom">dv</th>
+				<th class="left bottom">Eg.</th>
+			</tr>
+			<tr>
+				<td class="bottom">Simple linear</td>
+				<td class="left bottom">✤&nbspCont.<br>✤&nbsp1</td>
+				<td class="left bottom">◈&nbspCont.</a><br>◈&nbsp1</td>
+				<td class="left bottom">✤&nbspincome<br>◈&nbsplife expectancy</td>
+			</tr>
+			<tr>
+				<td class="bottom">Multiple linear</td>
+				<td class="left bottom">✤&nbspCont.<br>✤&nbsp2/></td>
+				<td class="left bottom">◈&nbspCont.<br>◈&nbsp1</td>
+				<td class="left bottom">✤&nbspincome & minutes of exercise per day<br>◈&nbsplife expectancy</td>
+			</tr>
+			<tr>
+				<td>Logistic</td>
+				<td class="left">✤&nbspCont.</td>
+				<td class="left">◈&nbspCat. (Binary)</td>
+				<td class="left">✤&nbspdrug dosage<br>◈&nbspcured or not</td>
+			</tr>
+		</table>
+		</li>
+		
+		<li>
+		Logistic regression: Other examples
+		<table>
+			<tr>
+				<th class="bottom">iv</th>
+				<th class="left bottom">dv</th>
+			</tr>
+			<tr>
+				<td>
+					✤&nbspAge (Cont.)
+					<br>✤&nbspBP (Cont.)
+					<br>✤&nbspCholesterol (Cont.)
+					<br>✤&nbspGender (Cat.)
+				</td>
+				<td class="left">✩&nbspCardiovascular event 
+				(Cat.), binary</td>
+			</tr>
+		</table>
+		</li>
+		
+		<a id="5" class="target"></a>
+		<li>
+		Multinomial logistic regression: <sup>[3]</sup>
+		<br>
+		<br>✩&nbspTo predict <b>dv</b> with 
+		<b>more than two</b> categories.
+		<br>
+		<table>
+			<tr>
+				<th class="bottom">iv</th>
+				<th class="left bottom">dv</th>
+			</tr>
+			<tr>
+				<td class="bottom">
+					Location in UK (Cat.)
+					<br>✤&nbspLondon<br>✤&nbspSouth UK<br>✤&nbspNorth UK
+					<br>
+					<br>Age (Cont.)
+				</td>
+					<td class="left bottom">
+					Type of drink (Cat.)
+					<br>✤&nbspCoffee<br>✤&nbspSoft drink<br>✤&nbspTea<br>✤&nbspPlain water
+				</td>
+			</tr>
+			<tr>
+				<td>
+					✤&nbspEmployment duration (<a class="blu">Cont.</a>)
+					<br>✤&nbspMale / female (<a class="pink">Cat.</a>)
+				</td>
+				<td class="left">
+					Management level(Cat.)
+					<br>✤&nbspLower
+					<br>✤&nbspMiddle
+					<br>✤&nbspUpper
+				</td>
+			</tr>
+		</table>
+		</li>
+		
+		<a id="6" class="target"></a>
+		<li>
+		Multivariate analysis: <sup>[4]</sup>
+		<br>
+		<br><a class="c1">a) Multiple linear regression</a>
+		<br>
+		<br>&nbsp✩ Predict <b>cont.</b> dv.
+		
+		<p>
+			<b>Assumptions</b> of iv:
+			<br>&nbsp✩ All IVs are cont.
+			<br>&nbsp✩ Has linear r/ship with dv
+			<br>&nbsp✩ Homoskedasticity
+			<br>&nbsp✩ No autocorrelation
+			<br>&nbsp✩ Normal distribution
+			<br>&nbsp✩ Multicollinearity
+		</p>
+		<p>
+			If iv is <b>cat.</b>, first convert it to <b>cont.</b>
+			<br>&nbsp✩ Binary cat. iv ⇝ <b>0, 1</b>
+		</p>
+		<center>❀ ❀ ❀ ❀ ❀</center>
+
+		<br><a class="c1">b) Multiple logistic regression</a>
+		<br>
+		<br>&nbsp✩ Predict binary <b>cat.</b> dv.
+		
+		</li>
+    </ol>
+	<hr>
+	
+	<h3>Reference(s)</h3>
+	
+	<ol>
+		<li class="ref">
+		<a class="isi2" 
+		href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9747134/" 
+		target="_blank">
+		Linear and logistic regression models: when to use and how to interpret them?
+		</a>
+		</li>
+		<li class="ref">
+		<a class="isi2" 
+		href="https://www.scribbr.com/statistics/statistical-tests/" 
+		target="_blank">
+		Choosing the Right Statistical Test
+		</a>
+		</li>
+		<li class="ref">
+		<a class="isi2" 
+		href="https://statistics.laerd.com/spss-tutorials/multinomial-logistic-regression-using-spss-statistics.php" 
+		target="_blank">
+		Multinomial Logistic Regression using SPSS Statistics
+		</a>
+		</li>
+		<li class="ref">
+		<a class="isi2" 
+		href="https://manifold.open.umn.edu/read/chapter-7-steps-for-multivariate-analysis-and-results/section/3c6a9d68-db0d-4df8-ab22-8dfdeaef3a0a" 
+		target="_blank">
+		Steps for Multivariate Analaysis and Results
+		</a>
+		</li>
+	</ol>
+
+	<!--✤ ◈ ✩ ⇝-->
+	<!--<ol><li></li></ol>-->
+	<!--<p></p>-->
+	<!--<center><p></p></center>-->
+	<!--<center><i id="arab">teks arab</i></center>-->
+	<!--<center><i id="arab">❀ ❀ ❀</i></center>-->
+
+<a href='#' class="stt">↑</a>
+
+</body>
+
+</html>

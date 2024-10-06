@@ -132,6 +132,14 @@
 		.target {
 			scroll-margin-top: 20px;
 		}
+		
+		.left {
+			border-left: 1px solid #ccc;
+		}
+		
+		.bottom {
+			border-bottom: 1px solid #ccc;
+		}
 
         @media (max-width: 500px) {
             body {
