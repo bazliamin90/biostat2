@@ -23,6 +23,11 @@
 			padding-top: 20px;
         }
 		
+		ol ::marker {
+			color: red;
+			font-weight: bold;
+		}
+		
 		.ol2{
 			padding-left: 40px;
 		}
@@ -97,11 +102,9 @@
 			height: 18px;
 			font-size: 0.8rem;
 			text-align: center;
-			background-color: white;
-			color: black;
-			border: 1px solid grey;
+			background-color: #f9f9f9;
+			color: grey;
 			text-decoration: none;
-			opacity: 0.4;
 			border-bottom-right-radius: 5px;
 			border-top-left-radius: 5px;
 		}
@@ -116,7 +119,7 @@
 			justify-content: center;
 		}
 
-		#title {
+		.title {
 			position: sticky;
 			top: 0;
 			background-color: white;
@@ -124,6 +127,10 @@
 			line-height: 1.3;
 			padding-left: 5px;
 			margin-top: 0;
+		}
+		
+		.target {
+			scroll-margin-top: 20px;
 		}
 
         @media (max-width: 500px) {
@@ -136,7 +143,7 @@
 			}
 			
 			h1 {
-				font-size: 20px;
+				font-size: 17px;
 			}
 		
 			h3 {
