@@ -5,41 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standardization</title>
     <link rel="stylesheet" href="style.css">
+	<script src="header.js"></script>
 </head>
 <body>
 
-    <h1>Standardization</h1>
-	<hr>
+<header-component></header-component>
+
+    <h1 id="title">Standardization</h1>
 	
 	<nav>
       <ol>
         <li><a href="#why">Why standardization?</a></li>
 		<li><a href="#type">Types</a></li>
-		<li><a href="#asr">Age-standardized rate</a></li>
+		<li><a href="#asr">Which methods to choose?</a></li>
 		<li><a href="#direct">Direct method</a></li>
 		<li><a href="#directe">Direct example</a></li>
 		<li><a href="#indirect">Indirect method</a></li>
 		<li><a href="#indirecte">Indirect example</a></li>
       </ol>
     </nav>
-	<hr>
 	
+	<br>
+	<center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
+	
+<a id="why"></a>
 	<ol>
-		<a id="why"></a>
-		<li><a class="c1">Comparing</a> mortality and morbidity rates in two or more populations is important for the evaluation of community health status.
+		<li>To <a class="c1">compare</a> mortality and morbidity rates in two or more populations.This is important for the evaluation of community health status.
 		
-		<li><a id="type"></a>Comparison is made by using two methods of standardization: 
+		<a id="type"></a>
+		<li>Types of standardization: 
 			<ol class="ol2">
 			<li><a class="c2">direct.</a>
 			<li><a class="c2">indirect.</a>
+<a id="asr"></a>
 			</ol>
-		<li><a id="asr"></a>Eg. Age-standardized rates.
+		
+		<li>Availability of <a class="c1">age-standardized rates</a> shall determine which standardization method to use.
 			<ul>
 			<li>If age-specific mortality rates (<a class="c1">asmr</a>) for two or more populations are known, 
 			use <a class="c1">direct</a> standardization.
 			<li>If asmr are unknown, use indirect standardization.
+<a id="direct"></a>
 			</ul>
-		<li><a id="direct"></a><a class="c2">Direct</a> standardization steps:
+
+		<li><a class="c2">Direct</a> standardization steps:
 			<ol class="ol2">
 			<li>Calculate asmr (each age group, each population).
 			<li>Choose one of the populations as reference (standard) population. 
@@ -52,8 +61,9 @@
 			<li>To get age-adjusted mortality rates, divide total number of expected
 			deaths by the standard population.
 			<li>Compare asmr of the two populations.
+<a id="directe"></a>
 			</ol>
-		<li><a id="directe"></a>Direct standardization, example:
+		<li>Direct standardization, example:
 			<img src="https://github.com/bazliamin90/img/blob/main/bios/0002a.png?raw=true">
 			<ul class="ol2">
 			<li>B have higher crude death rates (cdr) than A.
@@ -69,8 +79,9 @@
 				<br>B = (1158.99/51,000) x 1000 = 22.7 per 1000 population.
 			<li>Based on age-adjusted rates, risk of death is higher in population A than B.
 			<li>Therefore, relying on crude death rates only is misleading.
+<a id="indirect"></a>
 			</ul>
-		<li><a id="indirect"></a><a class="c1">Indirect</a> standardization steps:	
+		<li><a class="c1">Indirect</a> standardization steps:	
 			<ol class="ol2">
 			<li>Choose a reference population.
 			<li>Calculate observed deaths in the populations of interest.
@@ -87,8 +98,9 @@
 				<br>amr = smr x cdr
 			<li>If asmr of the reference population is applied, cdr must be calculated 
 			from that reference population.
+<a id="indirecte"></a>
 			</ol>
-		<li><a id="indirecte"></a>Indirect standardization, example:
+		<li>Indirect standardization, example:
 			<ul class="ol2">
 			<li>First, we must know the observed death:
 				<br> A = 120
@@ -117,7 +129,6 @@
 	</ol>
 
 	<a href='#' class="stt">↑</a>
-	<a href="index.html" class="home">T o p i c s</a>
 </body>
 
 </html>
