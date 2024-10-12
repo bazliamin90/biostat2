@@ -10,11 +10,11 @@ headerTemplate.innerHTML = `
     }
 	
 	.home {
-		width: 50px;
-		height: 20px;
+		width: 60px;
+		height: 25px;
 		position: fixed;
 		top: 30px;
-		right: -16px;
+		right: -25px;
 		transform: rotate(90deg);
 		z-index: 9;
 		font-size: 10px;

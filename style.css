@@ -1,5 +1,11 @@
+@font-face { font-family: opendyslexic-bold; src: url('font/OpenDyslexic-Bold.otf'); }
+@font-face { font-family: opendyslexic-reg; src: url('font/OpenDyslexic-Regular.otf'); }
+@font-face { font-family: opendyslexic-ita; src: url('font/OpenDyslexic-Italic.otf'); }
+@font-face { font-family: opendyslexic-boldita; src: url('font/OpenDyslexic-BoldItalic.otf'); }
+
 		body {
-			font-family: Arial, sans-serif;
+			_font-family: Arial, sans-serif;
+			font-family: opendyslexic-reg;
             margin: 0 50px;
 			top: 0;
             padding: 20px;
