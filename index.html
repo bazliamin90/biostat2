@@ -9,6 +9,7 @@
 
 <body>
 
+<main>
 <header>
     <center><h1>Biostatistics</h1></center>
 	
@@ -21,19 +22,44 @@
 		<img src="fb.svg" style="height: 1.6rem"></img>
 	</a>
 	</div>
-
 </header>
     
-	<center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
-	<center><h3>Topics</h3></center>
+    <center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
+    <center><h3>Topics</h3></center>
 
-<ol>
-	<li><a href="0001_regression.html" class="isi">Linear & logistic regression</a></li>
-	<li><a href="0002_standardization.html" class="isi">Standardization</a></li>
-</ol>
+    <!-- Search input -->
+    <center>
+        <input type="text" id="searchBox" placeholder="Search topics..." onkeyup="filterTopics()" style="margin-bottom: 20px; padding: 5px; width: 80%;">
+    </center>
 
-<a href='#' class="stt">↑</a>
+    <ol id="topicsList" class="mainbullet">
+        <li><a href="0001_regression.html" class="isi">Linear & logistic regression</a></li>
+        <li><a href="0002_standardization.html" class="isi">Standardization</a></li>
+        <!-- Add more topics here -->
+    </ol>
+
+    <a href='#' class="stt">↑</a>
+</main>
+
+<!-- JavaScript to filter topics -->
+<script>
+function filterTopics() {
+    var input, filter, list, topics, i, txtValue;
+    input = document.getElementById('searchBox');
+    filter = input.value.toLowerCase();
+    list = document.getElementById("topicsList");
+    topics = list.getElementsByTagName('li');
+
+    for (i = 0; i < topics.length; i++) {
+        txtValue = topics[i].textContent || topics[i].innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            topics[i].style.display = "";
+        } else {
+            topics[i].style.display = "none";
+        }
+    }
+}
+</script>
 
 </body>
-
 </html>

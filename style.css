@@ -4,14 +4,20 @@
 @font-face { font-family: opendyslexic-boldita; src: url('font/OpenDyslexic-BoldItalic.otf'); }
 
 		body {
-			_font-family: Arial, sans-serif;
 			font-family: opendyslexic-reg;
-            margin: 0 50px;
-			top: 0;
-            padding: 20px;
+			_top: 0;
             text-align: left;
 			overflow-y: scroll;
+			margin: 0 0 4rem 0;
+			padding: 0 0px;
+			color: #555;
         }
+		
+		main {
+			margin: 0px auto;
+			max-width: 50rem;
+			width: 85%;
+		}
 		
         h1 {
             font-size: 23px;
@@ -26,8 +32,11 @@
         p, ol, li{
             font-size: 18px;
             color: #555;
-			padding-top: 20px;
         }
+		
+		.mainbullet li{
+			padding: 10px 0;
+		}
 		
 		ol ::marker {
 			color: red;
@@ -146,26 +155,36 @@
 		.bottom {
 			border-bottom: 1px solid #ccc;
 		}
+		
+		#searchBox {
+			font-family: opendyslexic-reg;
+			outline: none;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
 
         @media (max-width: 500px) {
-            body {
-                margin: 0 10px;
-            }
 			
-			p, ol, li{
-				font-size: 13px;
+			main ol {
+				margin-left: 0;  /* Remove extra left margin */
+				padding-left: 20px;  /* Adjust this value to control the distance from the left edge */
+			}
+			
+			p, ol, li, #searchBox {
+				font-size: 12px;
 			}
 			
 			h1 {
-				font-size: 17px;
+				font-size: 16px;
 			}
 		
 			h3 {
-				font-size: 15px;
-			}
+				font-size: 14px;
+			}			
 			
-			ol{
-				padding: 15px;
+			nav {
+				margin: 0 auto;
+				width: 85%;
 			}
 			
 			nav ol {
@@ -175,7 +194,7 @@
 
 			nav ol li {
 				margin: 5px;
-				font-size: 13px;
+				font-size: 12px;
 				text-align: center;
 			}
         }

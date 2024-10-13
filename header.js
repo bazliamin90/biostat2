@@ -13,8 +13,8 @@ headerTemplate.innerHTML = `
 		width: 60px;
 		height: 25px;
 		position: fixed;
-		top: 30px;
-		right: -25px;
+		top: 40px;
+		right: -28px;
 		transform: rotate(90deg);
 		z-index: 9;
 		font-size: 10px;
