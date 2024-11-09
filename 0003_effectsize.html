@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect size</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="header.js"></script>
+</head>
+<body>
+
+<header-component></header-component>
+
+    <h1 class="title">Effect size</h1>
+
+<main>
+	<nav>
+      <ol class="mainbullet">
+        <li><a href="#what">What?</a></li>
+		<li><a href="#prac">Practical significance</a></li>
+		<li><a href="#ss">Effect of sample size</a></li>
+		<li><a href="#eg">Example</a></li>
+		<li><a href="#calc">When to calculate?</a></li>
+		<li><a href="#how">How to calculate?</a></li>
+      </ol>
+    </nav>
+	
+	<br>
+	<center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
+	
+	<ol class="mainbullet">
+		<a id="what" class="target"></a>
+		<li><a class="c1">Magnitude</a> of difference between groups.
+		
+		<li><i>“You should describe the results in terms of measures of magnitude –not just, does a treatment affect people, but how much does it affect them.”</i>
+			<br><br>-Gene V. Glass, on the importance of mentioning effect size.
+		
+		<a id="prac" class="target"></a>
+		<li>If statistical significance is denoted by p value, then practical significance (real world) is denoted by effect size.
+			<ul>
+			<li>P value = shows the <a class="c2">existence</a> of effect.
+			<li>Effect size = shows the <a class="c1">magnitude</a> of effect.
+			</ul>
+		
+		<a id="ss" class="target"></a>
+		<li>Effect size is <a class="c2">not affected</a> by sample size. It estimates a population parameter. Whereby, p value is influenced by sample size as well as effect size.
+
+			<img src="https://github.com/bazliamin90/img/blob/main/bios/0003a.jpg?raw=true">
+			<ul class="ol2">
+			<li>Effect size in the two studies is the same (r=0.30), although different N. Effect size is not influenced by sample size.
+			<li>But only in study with N=100 is statistically significant (CI does not cross 0). 
+			<li>A population size of N=30 requires a value of r=0.35 to get p<0.05 .
+			<li>This shows: p is influenced by sample & effect size.
+			</ul>
+			
+		<li>Effect size and sample size:
+
+			<ul class="ol2">
+			<li>Large effect size = possible to be detected in small sample size.
+			<li>Small effect size = requires large sample size.
+			</ul>
+			
+		<a id="eg" class="target"></a>
+		<li>Example of study that shows importance of effect size:
+			<ul>
+			<li>Aspirin reduces risk of MI, P<.00001
+			<li>Therefore, it was statistically significant, and therefore recommended for prevention.
+			<li>However, <a class="c2">r2 = 0.001 → extremely small effect size</a>! {r2 = coefficient of determination, a type of effect size}
+			<li>As a result, many people took aspirin, although almost no benefit, while at risk of adverse effects.
+			</ul>
+			
+		<li>Another example:
+		
+			<img src="https://github.com/bazliamin90/img/blob/main/bios/0003b.png?raw=true">
+			<ul class="ol2">
+			<li>The result is statistically significant. That means there is a difference in effect between the methods.
+			<li>However, with an absolute difference of only 0.1 kg, is it really an effect? Can we just neglect it?
+			<li>Moreover, p-value does not even tell which one gives the slightly better mean weight loss.
+			<li>This is where calculating effect size (eg. using Cohen’s <i>d</i>) plays a role.
+			</ul>
+			
+		<a id="calc" class="target"></a>
+		<li>Effect size is helpful to be calculated <a class="c1">before and after</a> data collection.
+			<ul>
+				<li>Before study:
+				<ul>
+				<li>Expected effect size can determine minimum sample size needed.
+				<li>Sample size affects power of study (likelihood of rejecting false null hypothesis/likelihood of detecting an effect when there is one).
+				<li>Do power analysis to determine minimum sample size.
+				</ul>
+				<li>After study done:
+				<ul>
+				<li>Report the actual effect size in our result.
+				</ul>
+			</ul>	
+			
+		<a id="how" class="target"></a>
+		<li>We can calculate effect size via <a class="c2">Cohen’s d</a>, <a class="c2">Pearson’s r</a> (correlation of coefficient), <a class="c2">odds ratio</a>, <a class="c2">relative risk</a>, and others.
+
+	</ol>
+	<hr>
+	
+	<h3>Reference(s)</h3>
+	<ol>
+		<li class="grey">
+			<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/#:~:text=magnitude%20of%20the%20difference" target="_blank">
+			What is Effect Size and Why Does It Matter?
+			</a>
+		<li class="grey">
+			<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3444174/#:~:text=information%20PMC%20Disclaimer-,Statistical%20significance,-is%20the%20least" target="_blank">
+			Using Effect Size—or Why the P Value Is Not Enough
+			</a>
+		<li class="grey">
+			<a href="http://psychologyinrussia.com/volumes/?article=3837#:~:text=clinically%20relevant%20fashion.-,Figure%203.%20It%20is,-observed%20that%20although" target="_blank">
+			Effect size, confidence intervals and statistical power in psychological research
+			</a>
+	</ol>
+
+	<a href='#' class="stt">↑</a>
+</main>
+	
+</body>
+
+</html>
