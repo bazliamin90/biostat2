@@ -1,11 +1,6 @@
-@font-face { font-family: opendyslexic-bold; src: url('font/OpenDyslexic-Bold.otf'); }
-@font-face { font-family: opendyslexic-reg; src: url('font/OpenDyslexic-Regular.otf'); }
-@font-face { font-family: opendyslexic-ita; src: url('font/OpenDyslexic-Italic.otf'); }
-@font-face { font-family: opendyslexic-boldita; src: url('font/OpenDyslexic-BoldItalic.otf'); }
 
 		body {
-			font-family: opendyslexic-reg;
-			_top: 0;
+			font-family: arial, sans-serif;
             text-align: left;
 			overflow-y: scroll;
 			margin: 0 0 4rem 0;
@@ -157,7 +152,7 @@
 		}
 		
 		#searchBox {
-			font-family: opendyslexic-reg;
+			font-family: arial, sans-serif;
 			outline: none;
 			border: 1px solid #ccc;
 			border-radius: 5px;
