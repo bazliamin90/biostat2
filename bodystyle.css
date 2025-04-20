@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: monospace;
+	background-color: #f0f8ff; /* Light blue */
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+.header {
+	text-decoration: none;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: black;
+    background-color: #fff;
+    border: none;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease;
+}
+
+.header:active {
+	color: white;
+	background-color: grey;
+}
+
+.topbar {
+	margin: 0 auto;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 5px;
+	position: sticky;
+	top: 0;
+	background-color: rgb(123, 105, 255); /* Recommended to avoid content showing underneath */
+	z-index: 1000; /* Makes sure it stays above other elements */
+}
+
+h3, h5, ol, ul {
+	color: #555;
+}
+
+#red {
+	color: red;
+}
+
+li {
+	padding: 5px 0;
+}
+
+ol, ul {
+	padding: 0 5px 0 25px;
+}
+
+#reset-button {
+	background-color: #ff9088; /* Red */
+	border-radius: 5px;
+}
+
+#active-filters {
+	margin-top: 10px;
+	padding: 8px 12px;
+	background-color: #f0f8ff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	color: #333;
+	width: fit-content;
+  }
+  
+#expenseForm {
+	border: 2px solid #ffa920;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 10px 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#panduan {
+	margin: 10px 10px;
+	border: 2px solid #ffa920;
+	border-radius: 8px;
+	padding: 10px 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+nav {
+	border: 2px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+nav ol {
+	display: flex;
+	flex-wrap: wrap; /* Allows wrapping to a new line if space is limited */
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	justify-content: space-around; /* Space evenly between items */
+}
+
+nav ol li {
+	margin-right: 15px; /* Space between list items */
+}
+
+nav ol li a {
+	color: #555;
+}
+
+.target {
+	scroll-margin-top: 40px;
+}
+
+.stt {
+	position: fixed;
+	bottom: 50px;
+	right: 400px;
+	z-index: 9;
+	padding: 5px 5px;
+	font-size: 12px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	color: grey;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+}
+
+.stt:active {
+	color: white;
+	background-color: black;
+}
+
+img {
+	width: 100%;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 10px 0;
+	display: flex;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+}
+@media (max-width: 800px) {	
+    .stt {
+        right: 40px;
+        }
+    }
+
+@media screen and (max-width: 500px) {
+    .stt {
+		right: 10px;	
+	}
+}
