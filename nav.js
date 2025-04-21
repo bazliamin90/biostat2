@@ -62,7 +62,7 @@ headerTemplate.innerHTML = `
 
     .list-button {
         font-family: monospace;
-        font-size: 10px;
+        font-size: 12px;
         padding: 5px 10px;
         margin: 10px auto;
         color: black;
@@ -112,6 +112,7 @@ headerTemplate.innerHTML = `
           <li><a href="index.html">Homepage</a></li>
           <li><a href="0003_effectsize.html">Effect size</a></li>
           <li><a href="0001_regression.html">Linear & logistic regression</a></li>
+          <li><a href="0002_standardization.html">Standardization</a></li>
       </ol>
   </div>
 `;

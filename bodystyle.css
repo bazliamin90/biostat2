@@ -4,6 +4,7 @@ html {
 
 body {
 	font-family: monospace;
+	font-size: 14px;
 	background-color: #f0f8ff; /* Light blue */
 	max-width: 700px;
 	margin: 0 auto;
@@ -13,7 +14,7 @@ body {
 
 .header {
 	text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 10px;
     margin: 10px 0;
     color: black;
@@ -150,6 +151,12 @@ img {
 	border-top: 1px solid red;
 	border-bottom: 1px solid red;
 }
+
+a {
+	text-underline-offset: 3px;
+	color: inherit;
+}
+
 @media (max-width: 800px) {	
     .stt {
         right: 40px;
