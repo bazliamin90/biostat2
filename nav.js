@@ -3,8 +3,8 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
   <style>
 	.scroll-box {
-        width: 90%; /* Adjust the width as needed */
-        height: 150px; /* Fixed height to limit the visible area */
+        width: 80%; /* Adjust the width as needed */
+        height: 200px; /* Fixed height to limit the visible area */
         border: 3px solid black;
         padding: 10px;
         background-color: #f9f9f9;
@@ -37,20 +37,21 @@ headerTemplate.innerHTML = `
         padding: 5px;
         margin-bottom: 10px;
         font-family: monospace;
-		font-size: 12px;
+		    font-size: 12px;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
 .scroll-box ol {
     font-family: monospace;
     margin: 0;
-    padding: 0 0 0 1.2em; /* ← Add left padding */
+    padding: 0 0 0 2.2em; /* ← Add left padding */
     list-style-position: outside; /* ← Change to outside */
     color: red;
 }
 
 	.scroll-box ol a{
 		font-family: monospace;
+    font-size: 12px;
 		text-decoration: underline grey dotted;
 		text-underline-offset: 5px;
 		color: black;
