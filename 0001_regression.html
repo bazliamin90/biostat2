@@ -1,22 +1,21 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regression</title>
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bodystyle.css">
 	<script src="nav.js"></script>
 </head>
-
 <body>
-
-<header-component></header-component>
-
-    <h1 class="title">Linear & logistic regression</h1>
-
-<main>
+<div class="topbar">
+	<header-component></header-component>
+	<a href="index.html" class="header">Biostats by Bazli</a>
+</div>
+<div id="panduan">
+	<center><h4>Linear & logistic regression</h4></center>
 	<nav>
-      <ol class="mainbullet">
+      <ol>
         <li><a href="#1">Why regression?</a></li>
 		<li><a href="#2">Choosing type of regression</a></li>
 		<li><a href="#3">Example</a></li>
@@ -26,107 +25,91 @@
       </ol>
     </nav>
 	
-	<br>
-	<center>=====◈◈◈◈◈◈◈◈◈◈=====</center>
-	
-	<ol class="mainbullet">
-	
-		<a id="1" class="target"></a>
-		<li>
-		To estimate <a class="c1">association</a> between <a class="c1">independent</a> 
-		and <a class="c1">dependent</a> variable.
-		</li>
+	<a id="1" class="target"></a>
+	<ol>
+		<li>To estimate association between independent and dependent variable.</li>
+		<li>Independent variable <b>(iv)</b> and dependent variable <b>(dv)</b> can be continuous or categorical (binary).<sup>[1]</sup></li>
+		<li>Some references stated that the <b>iv</b> must be a <a class="c1">continuous</a> variable.<sup>[2]</sup></li>
 		
-		<li>
-		Independent variable <b>(iv)</b> 
-		and dependent variable <b>(dv)</b> can 
-		be <a class="c2">continuous</a> or <a class="c2">categorical</a> (binary).<sup>[1]</sup>
-		</li>
-		
-		<li>
-		Some references <sup>[2]</sup> stated that the 
-		<b>iv</b> must 
-		be a <a class="c1">continuous</a> variable.
-		</li>
-		
-		<a id="2" class="target"></a>
+	<a id="2" class="target"></a>
 		<li>How to choose: 
-			<ol class="ol2">
-			<li><b>iv</b> + <b>continuous</b> dv = <a class="c2">linear</a> regression.
-			<li><b>iv</b> + <b>categorical</b> dv = <a class="c2">logistic</a> regression.
+			<ol>
+				<li><b>iv</b> + <b>continuous</b> dv = linear regression.</li>
+				<li><b>iv</b> + <b>categorical</b> dv = logistic regression.</li>
 			</ol>
 		
-		<a id="3" class="target"></a>
+	<a id="3" class="target"></a>
 		<li>Example:
-			<ul class="ol2">
-			<li><b>iv</b>: Cancer, copd , ild
-			<li><b>dv</b>: Days of stay at ICU (<b>cont.</b>), 
-		palliative care present or absent (<b>cat.</b>).
+			<ul>
+				<li><b>iv</b>: Cancer, copd , ild</li>
+				<li><b>dv</b>: Days of stay at ICU (<b>cont.</b>), palliative care present or absent (<b>cat.</b>).</li>
 			</ul>
 		</li>
 		
-		<li>
-		In the above example, both linear and logistic regression will be used.
-		</li>
+		<li>In the above example, both linear and logistic regression will be used.</li>
 		
-		<a id="4" class="target"></a>
-		<li>
-		Regression tests, simplified: <sup>[2]</sup>
-		<table>
+	<a id="4" class="target"></a>
+		<li>Regression tests, simplified: <sup>[2]</sup>
+		<div class="table-container">
+			<table>
 			<tr>
-				<th class="bottom">Regression</th>
-				<th class="left bottom">iv</th>
-				<th class="left bottom">dv</th>
-				<th class="left bottom">Eg.</th>
+				<th>Regression</th>
+				<th>iv</th>
+				<th>dv</th>
+				<th>Eg.</th>
 			</tr>
 			<tr>
-				<td class="bottom">Simple linear</td>
-				<td class="left bottom">✤&nbspCont.<br>✤&nbsp1</td>
-				<td class="left bottom">◈&nbspCont.</a><br>◈&nbsp1</td>
-				<td class="left bottom">✤&nbspincome<br>◈&nbsplife expectancy</td>
+				<td>Simple linear</td>
+				<td>✤&nbspCont.<br>✤&nbsp1</td>
+				<td>◈&nbspCont.</a><br>◈&nbsp1</td>
+				<td>✤&nbspincome<br>◈&nbsplife expectancy</td>
 			</tr>
 			<tr>
-				<td class="bottom">Multiple linear</td>
-				<td class="left bottom">✤&nbspCont.<br>✤&nbsp2/></td>
-				<td class="left bottom">◈&nbspCont.<br>◈&nbsp1</td>
-				<td class="left bottom">✤&nbspincome & minutes of exercise per day<br>◈&nbsplife expectancy</td>
+				<td>Multiple linear</td>
+				<td>✤&nbspCont.<br>✤&nbsp2/></td>
+				<td>◈&nbspCont.<br>◈&nbsp1</td>
+				<td>✤&nbspincome & minutes of exercise per day<br>◈&nbsplife expectancy</td>
 			</tr>
 			<tr>
 				<td>Logistic</td>
-				<td class="left">✤&nbspCont.</td>
-				<td class="left">◈&nbspCat. (Binary)</td>
-				<td class="left">✤&nbspdrug dosage<br>◈&nbspcured or not</td>
+				<td>✤&nbspCont.</td>
+				<td>◈&nbspCat. (Binary)</td>
+				<td>✤&nbspdrug dosage<br>◈&nbspcured or not</td>
 			</tr>
 		</table>
+		</div>
 		</li>
 		
 		<li>
 		Logistic regression: Other examples
-		<table>
-			<tr>
-				<th class="bottom">iv</th>
-				<th class="left bottom">dv</th>
-			</tr>
-			<tr>
-				<td>
-					✤&nbspAge (Cont.)
-					<br>✤&nbspBP (Cont.)
-					<br>✤&nbspCholesterol (Cont.)
-					<br>✤&nbspGender (Cat.)
-				</td>
-				<td class="left">✩&nbspCardiovascular event 
-				(Cat.), binary</td>
-			</tr>
-		</table>
+			<div class="table-container">
+			<table>
+				<tr>
+					<th>iv</th>
+					<th>dv</th>
+				</tr>
+				<tr>
+					<td>
+						✤&nbspAge (Cont.)
+						<br>✤&nbspBP (Cont.)
+						<br>✤&nbspCholesterol (Cont.)
+						<br>✤&nbspGender (Cat.)
+					</td>
+					<td>✩&nbspCardiovascular event 
+					(Cat.), binary</td>
+				</tr>
+			</table>
+			</div>
 		</li>
 		
-		<a id="5" class="target"></a>
+	<a id="5" class="target"></a>
 		<li>
 		Multinomial logistic regression: <sup>[3]</sup>
 		<br>
 		<br>✩&nbspTo predict <b>dv</b> with 
 		<b>more than two</b> categories.
 		<br>
+		<div class="table-container">
 		<table>
 			<tr>
 				<th class="bottom">iv</th>
@@ -157,6 +140,7 @@
 				</td>
 			</tr>
 		</table>
+		</div>
 		</li>
 		
 		<a id="6" class="target"></a>
@@ -190,7 +174,7 @@
     </ol>
 	<hr>
 	
-	<h3>Reference(s)</h3>
+	<h4>Reference(s)</h4>
 	
 	<ol>
 		<li class="grey">
@@ -221,17 +205,11 @@
 		</a>
 		</li>
 	</ol>
+<br><br><br>
+</div>
 
-	<!--✤ ◈ ✩ ⇝-->
-	<!--<ol><li></li></ol>-->
-	<!--<p></p>-->
-	<!--<center><p></p></center>-->
-	<!--<center><i id="arab">teks arab</i></center>-->
-	<!--<center><i id="arab">❀ ❀ ❀</i></center>-->
-
-<a href='#' class="stt">↑</a>
-</main>
-
+<a href="#" class="stt" title="Scroll to top" aria-label="Scroll to top">▲</a>
+<br><br><br>
 </body>
 
 </html>

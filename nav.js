@@ -58,7 +58,7 @@ headerTemplate.innerHTML = `
 	}
 
 .scroll-box li {
-    padding: 5px 5px;
+    padding: 5px 0;
 }
 
     .list-button {
