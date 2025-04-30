@@ -96,6 +96,10 @@ headerTemplate.innerHTML = `
     #overlay.visible {
         display: block;
     }
+
+    p {
+        font-size: 12px;
+    }
   </style>
 
   <button class="list-button" aria-label="Toggle List">Page</button>
@@ -109,12 +113,15 @@ headerTemplate.innerHTML = `
         placeholder="Search..."
         aria-label="Search list items"
       />
-      <ol id="list">
+    <ol id="list">
           <li><a href="index.html">Homepage</a></li>
           <li><a href="0003_effectsize.html">Effect size</a></li>
           <li><a href="0001_regression.html">Linear & logistic regression</a></li>
+          <hr>
+          <p>Epidemiology</p>
+          <li><a href="0004_tailtest.html">One/two-tailed test</a></li>
           <li><a href="0002_standardization.html">Standardization</a></li>
-      </ol>
+    </ol>
   </div>
 `;
 
